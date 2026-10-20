@@ -1,0 +1,19 @@
+{
+  "chainId": 31337,
+  "chainName": "Local test chain",
+  "rpc": "http://127.0.0.1:8545",
+  "explorer": "",
+  "token": "0x7a2088a1bfc9d81c55368ae168c2c02570cb814f",
+  "registry": "0x09635f643e140090a9a8dcd712ed6285858cebef",
+  "escrow": "0xc5a5c42992decbae36851359345fe25997f5c42d",
+  "seller": "0x976EA74026E726554dB657fA54763abd0C3a0aa9",
+  "deployBlock": 121,
+  "deployedAt": "2026-10-19T15:02:06.898Z",
+  "mandate": {
+    "perPayment": 800000,
+    "perDay": 1600000,
+    "approveAbove": 100000,
+    "maxAutoPayments": 5
+  },
+  "dailyCapNote": null
+}

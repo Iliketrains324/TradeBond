@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en" data-view="app" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TradeBond</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23C0392B'/%3E%3Ctext x='16' y='21' font-size='13' font-weight='700' text-anchor='middle' fill='white' font-family='serif'%3ETB%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="stage.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-row">
+    <div class="brand">
+      <span class="brand-seal" aria-hidden="true">TB</span>
+      <div>
+        <div class="brand-name">TradeBond</div>
+        <div class="brand-sub">AI agent wallet for cross-border trade</div>
+      </div>
+    </div>
+    <div class="switch" role="tablist" aria-label="View">
+      <button role="tab" data-view-set="app" aria-selected="true">App</button>
+      <button role="tab" data-view-set="backstage" aria-selected="false">Backstage</button>
+    </div>
+    <div class="top-meta">
+      <span class="chip">Simulated e-CNY</span>
+      <span class="chip">Fictional companies</span>
+      <span class="chip ai-chip" id="chain-chip" tabindex="0" data-tip="Checking whether the chain is connected…">Chain: checking…</span>
+      <span class="chip ai-chip" id="ai-chip" tabindex="0" data-tip="Checking whether the AI is connected…">AI: checking…</span>
+      <span class="clock" id="clock">--:--:-- UTC+8</span>
+      <div class="inbox-wrap">
+        <button class="btn sm ghost inbox-btn" id="inbox-btn" type="button" data-act="inbox" aria-expanded="false" aria-controls="inbox" aria-label="Notifications"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span class="inbox-count" id="inbox-count" hidden></span></button>
+        <div class="inbox" id="inbox" role="dialog" aria-label="Notifications" hidden></div>
+      </div>
+      <button class="btn sm ghost" id="theme-btn" type="button" aria-pressed="false">Dark mode</button>
+      <button class="btn sm sim-btn" id="sim-btn" type="button" aria-expanded="false" aria-controls="simulator">Simulator</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="view-app" class="view" aria-label="App"></section>
+  <section id="view-backstage" class="view" aria-label="Backstage" hidden></section>
+</main>
+
+<aside id="simulator" class="drawer" hidden aria-label="Simulator"></aside>
+<div id="modal" class="modal" hidden></div>
+<div id="toast" class="toast" role="status" hidden></div>
+<footer class="foot">TradeBond v4.1 · demonstration only: test token, fictional companies, not audited</footer>
+
+<script src="faces.js"></script>
+<script src="faq.js"></script>
+<script src="catalogue.js"></script>
+<script src="net.js"></script>
+<script src="sim.js"></script>
+<script src="stage-art.js"></script>
+<script src="stage.js"></script>
+<script src="ui.js"></script>
+</body>
+</html>

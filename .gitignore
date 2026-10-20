@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+node_modules/
+state.json
+state.json.tmp
+state.*.json
+state.*.json.tmp
+contracts/out/
+contracts/cache/
+# deployment.json only holds public addresses; commit it if you want the live link to keep the same contracts

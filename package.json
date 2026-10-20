@@ -1,0 +1,20 @@
+{
+  "name": "tradebond",
+  "version": "4.1.0",
+  "private": true,
+  "description": "TradeBond demo: AI agent wallet for cross-border trade (simulated e-CNY, fictional companies)",
+  "scripts": {
+    "start": "node server.js",
+    "deploy": "node deploy.js",
+    "deploy:local": "node deploy.js --local",
+    "build:contracts": "node contracts/build.js",
+    "deploy:fisco": "ENV_FILE=.env.fisco DEPLOYMENT_FILE=deployment.fisco.json STATE_FILE=state.fisco.json node deploy.js --fisco",
+    "start:fisco": "ENV_FILE=.env.fisco DEPLOYMENT_FILE=deployment.fisco.json STATE_FILE=state.fisco.json PORT=${PORT:-8083} node server.js"
+  },
+  "dependencies": {
+    "viem": "2.21.55"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

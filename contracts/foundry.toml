@@ -1,0 +1,6 @@
+[profile.default]
+src = "src"
+out = "out"
+test = "test"
+script = "script"
+solc = "0.8.11" # the version in contracts/build and on FISCO BCOS
